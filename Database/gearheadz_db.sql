@@ -15,6 +15,7 @@ CREATE TABLE members (
 	memberID INT(5) NOT NULL AUTO_INCREMENT,
 	username CHAR(16) NOT NULL,
 	password CHAR(16) NOT NULL,
+	email CHAR(75) NOT NULL,
 	isAdmin BOOLEAN NOT NULL,
 	firstName VARCHAR(20) NOT NULL,
 	lastName VARCHAR(30) NOT NULL,
