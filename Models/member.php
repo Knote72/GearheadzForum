@@ -4,8 +4,8 @@ class Member{
 	
 	public function __construct($USERNAME, $PASSWORD, $EMAIL, $ISADMIN, $FIRSTNAME, $LASTNAME, $BIRTHDATE, $JOINDATE, $MEMBERID = null){
 		$this->memberID = $MEMBERID;
-		$this->username = $USERNAME;
-		$this->password = $PASSWORD;
+		$this->user_name = $USERNAME;
+		$this->mbr_password = $PASSWORD;
 		$this->email = $EMAIL;
 		$this->isAdmin = $ISADMIN;
 		$this->firstName = $FIRSTNAME;
@@ -40,12 +40,12 @@ class Member{
 	
 	public function getPassword()
     {
-        return $this->password;
+        return $this->mbr_password;
     }
 
     public function setPassword($VALUE)
     {
-        $this->password = $VALUE;
+        $this->mbr_password = $VALUE;
     }
 	
 	public function getEmail()
@@ -59,11 +59,11 @@ class Member{
     }
 	
 	public function getUsername(){
-		return $this->username;
+		return $this->user_name;
 	}
 	
 	public function setUsername($VALUE){
-		$this->username = $VALUE
+		$this->user_name = $VALUE
 	}
 	
 	public function getIsAdmin(){
