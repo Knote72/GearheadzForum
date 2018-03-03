@@ -17,20 +17,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">RCForums</a>
+                <a href="?action=homepage" class="navbar-brand">RCForums</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Thread" asp-action="Index">Forums</a></li>
-                    <li><a asp-area="" asp-controller="Build" asp-action="Index">Build Help</a></li>
-                    <li><a asp-area="" asp-controller="Gallery" asp-action="Index">Gallery</a></li>
-                    <li><a asp-area="" asp-controller="Voting" asp-action="Index">Voting</a></li>
-                    
+                    <li><a href="?action=homepage">Home</a></li>
+                    <li><a href="?action=forum_tree">Forums</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                        <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
-                        <li><a asp-area="" asp-controller="Account" asp-action="Logout">Logout</a></li>
+                        <li><a href="?action=register">Register</a></li>
+                        <li><a href="?action=login">Login</a></li>
                 </ul>
             </div>
         </div>

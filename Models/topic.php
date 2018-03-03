@@ -32,6 +32,19 @@ class MainTopic{
 }
 
 class SubTopic extends MainTopic{
+	private mainTopicID;
 	
+	public function __construct($TOPICID, $NAME, $DESCRIPTION, $MAINTOPICID){
+		parent::__construct($TOPICID, $NAME, $DESCRIPTION);
+		$this->mainTopicID = $MAINTOPICID;
+	}
+	
+	public function getMainTopicID(){
+		return $this->mainTopicID;
+	}
+	
+	public function setMainTopicID($VALUE){
+		$this->mainTopicID = $VALUE;
+	}
 }
 ?>

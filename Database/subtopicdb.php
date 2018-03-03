@@ -11,15 +11,21 @@ class SubTopicDB{
         $statement = $db->prepare($query);
         $statement->bindValue(":topicID", $TOPIC->getTopicID());
         $statement->execute();
-        $row = $statement->fetch();
+        $rows = $statement->fetchAll();
         $statement->closeCursor();
 
-        if ($row != false) {
-            $topic = new MainTopic(
-                                     $row['topicID'],
-                                     $row['topicName'],
-									 $row['topicDescription']);
-            return $topic;
+        if ($rows != false) {
+			$subTopics = array();
+			foreach($rows as $row){
+				$subTopic = new SubTopic(
+                                     $row['subTopicID'],
+                                     $row['subTopicName'],
+									 $row['subTopicDescription'],
+									 $row['mainTopicID']);
+				array_push($subTopics, $subTopic);
+			}
+            
+            return $subTopics;
         } else {
             return null;
         }

@@ -2,7 +2,7 @@
 class Member{
 	protected $memberID, $username, $password, $email, $isAdmin, $firstName, $lastName, $birthDate, $joinDate;
 	
-	public function __construct($USERNAME, $PASSWORD, $EMAIL, $ISADMIN, $FIRSTNAME, $LASTNAME, $BIRTHDATE, $JOINDATE, $MEMBERID = null){
+	public function __construct($MEMBERID, $USERNAME, $PASSWORD, $EMAIL, $ISADMIN, $FIRSTNAME, $LASTNAME, $BIRTHDATE, $JOINDATE){
 		$this->memberID = $MEMBERID;
 		$this->user_name = $USERNAME;
 		$this->mbr_password = $PASSWORD;

@@ -1,6 +1,6 @@
 		<hr />
 		<footer>
-			<p>&copy; 2017 - RCForum</p>
+			<p>&copy; 2017 - GearheadzForum</p>
 		</footer>
 	</div>
 </body>
